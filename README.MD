@@ -23,3 +23,20 @@
     [  ] Não é permitido cadastrar elogios para usuários inválidos
 
     [  ] O usuário precisa estar autenticado na aplicação
+
+
+
+- Melhorias Futuras
+    [  ] Fazer o envio de emails, quando receber um elogio.
+    
+    [  ] Colocar em produção. (heroku / amazon / digital ocean)
+
+    [  ] Criar o front-end.
+
+    [  ] Melhorar a Arquitetura do sistema.
+
+    [  ] Criar Erros Customizaveis (handle etc).
+
+    [  ] Utilizar outro Banco de dados. (olhar a documentação do typeOrm)
+
+    [  ] Adicionar mais services
