@@ -1,42 +1,88 @@
+readme nlw
+
 # NLW Valoriza
 
-## Descrição
+A platform to promote recognition among team members — recognize people, share positive feedback, and build a more positive work environment.
 
-- NLW Valoriza
-    Valoriza é uma plataforma para promover o reconhecimento entre companheiros de equipe.
+---
 
-## Tecnologias
+## 🧾 Description
 
-- [Node.js](https://nodejs.org/en/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Express](https://expressjs.com/pt-br/)
-- [JSONWebToken](https://github.com/auth0/node-jsonwebtoken#readme)
+NLW Valoriza is a backend application built with **Node.js**, **TypeScript**, and **Express**. It provides functionality for capturing “praises” (elogios), using JWT-based authentication, a database via TypeORM, and is designed with features like migrations, future expansion, and a clean architecture.  
 
-## Como Executar
+---
 
-- Clone o repositório
-- Rode `yarn` para baixar as dependências
-- Rode `yarn typeorm migration:run` para criar as tabelas do banco de dados.
-- Rode o `yarn dev` para iniciar a aplicação.
+## 🛠️ Technologies
 
-Por fim, a aplicação estará disponível em `http://localhost:3000`
+- Node.js  
+- TypeScript  
+- Express.js  
+- TypeORM  
+- JSON Web Token (JWT)  
 
+---
 
-## Melhorias Futuras
-    [  ] Fazer o envio de emails, quando receber um elogio.
-    
-    [  ] Colocar em produção. (heroku / amazon / digital ocean)
+## 🚀 Getting Started / How to Run
 
-    [  ] Criar o front-end.
+To run this project locally, follow these steps:
 
-    [  ] Melhorar a Arquitetura do sistema.
+```bash
+# Clone the repo
+git clone https://github.com/Kelvinsbs/nlwValoriza.git
+cd nlwValoriza
 
-    [  ] Criar Erros Customizaveis (handle etc).
+# Install dependencies
+yarn
 
-    [  ] Utilizar outro Banco de dados. (olhar a documentação do typeOrm)
+# Run database migrations
+yarn typeorm migration:run
 
-    [  ] Adicionar mais services
+# Start the development server
+yarn dev
+```
 
-#### Autor
-- Kelvin Santos Barcelos
-- nivlek.barcelos@gmail.com
+After that, the application should be available at:
+http://localhost:3000
+
+---
+
+## 🔮 Future Improvements (Roadmap)
+
+Here are some planned enhancements:
+
+ Send emails when a “praise” (elogio) is received
+
+ Deploy to production (Heroku / AWS / DigitalOcean etc.)
+
+ Build a front-end client (web or mobile)
+
+ Improve the system architecture (modularization, domain-driven design etc.)
+
+ Add custom error handling & global error middleware
+
+ Support for alternate databases (configure via TypeORM)
+
+ Add more services (e.g. notifications, analytics)
+
+---
+
+## ✍️ Author
+
+Kelvin Santos Barcelos
+
+Contact: nivlek.barcelos@gmail.com
+
+---
+
+## 📌 Notes
+
+Make sure to configure your .env or equivalent for environment variables (database credentials, JWT secrets, etc.).
+
+The project expects a SQL-compatible database to be used via TypeORM.
+
+If you build the frontend, consider REST or GraphQL to integrate with this backend.
+
+---
+
+Thank you for checking out NLW Valoriza!
+If you find bugs or have feature ideas, feel free to open an issue or pull request.
